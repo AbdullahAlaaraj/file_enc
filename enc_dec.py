@@ -3,7 +3,7 @@ from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.backends import default_backend
 import os
 
-# Function to generate AES key
+
 def generate_aes_key():
     aes_key = os.urandom(32)  # 256-bit AES key
     with open("aes_key.bin", "wb") as aes_key_file:
